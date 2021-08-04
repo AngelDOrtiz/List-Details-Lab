@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Character from '../Character/Character';
 
 const CharacterList = ({ characters }) => {
-  console.log(characters);
+  
   const characterElements = characters.map((character) => (
     <li key={character._id}>
       <Character
@@ -20,7 +20,7 @@ CharacterList.propTypes = {
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      affilliation: PropTypes.string.isRequired,
+      affiliation: PropTypes.string.isRequired,
       allies: PropTypes.string.isRequired,
       photoUrl: PropTypes.string.isRequired,
     })

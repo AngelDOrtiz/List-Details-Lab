@@ -9,8 +9,8 @@ const Character = ({ name, affiliation, allies, photoUrl, _id }) => (
       <img src={photoUrl} alt={name} />
       <figcaption>
         <p>{name}</p>
-        <p>{affiliation}</p>
-        <p>{allies}</p>
+        <p>Affiliations: {affiliation}</p>
+        <p>Allies: {allies}</p>
       </figcaption>
     </figure>
   </Link>

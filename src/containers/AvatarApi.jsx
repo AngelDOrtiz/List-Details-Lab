@@ -12,7 +12,7 @@ const AvatarApi = () => {
     setCharacter(character);
     setLoading(false);
   }, []);
-  console.log(character, 'fetch');
+  
   if(loading) return <h1>Loading...</h1>; 
   return <CharacterList characters={character} />;
 };
